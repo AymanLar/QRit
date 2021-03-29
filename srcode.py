@@ -5,8 +5,8 @@ qr = qrcode.QRCode(
     box_size=10,
     border=4,
 )
-qr.add_data('qrcode001.png')
+qr.add_data('MY DATA')
 qr.make(fit=True)
-
+# YOU CAN CHANGE THE COLORS IF YOU WANT
 img = qr.make_image(fill_color="black", back_color="white")
 img.save('1.png')
